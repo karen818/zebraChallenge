@@ -21,6 +21,10 @@ body {
   padding: 0;
 }
 
+h1, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 h1 {
   color: $light-grey;
   font-size: 18.0em;
@@ -28,7 +32,7 @@ h1 {
   letter-spacing: 2px;
   padding-top: 30px;
   opacity: 0;
-  text-align: center;
+
 }
 
 //font-size: 72px
@@ -47,7 +51,6 @@ h3 {
   font-size: 4.2em;
   font-weight: 300;
   letter-spacing: 2.5px;
-  text-align: center;
 }
 
 h3:after {
@@ -67,12 +70,32 @@ h4 {
   font-size: 2.6em;
   font-weight: 300;
   margin: 100px 0 50px 0;
-  text-align: center;
 }
 
-p {
+//font-size: 42px
+h5 {
+  color: $body-color;
+  font-size: 2.4em;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-align: left;
+}
+
+//font-size: 42px
+h6 {
+  color: $body-color;
+  font-size: 2.0em;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-align: left;
+}
+
+//font size 16px
+p, ol {
+  font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 1px;
+  padding: 0;
   text-align: left;
 }
 
@@ -133,14 +156,18 @@ p {
   z-index: -1;
 }
 
-// <<---------------Nav------------------->>
-
 .section-border {
   border-bottom: 2px solid $light-grey;
-  border-top: 2px solid $light-grey;
   position: relative;
   padding-bottom: 100px;
 }
+
+.section-text {
+  margin-top: 50px;
+}
+
+// <<---------------Nav------------------->>
+
 
 .breadcrumb {
   background-color: #fff;
@@ -217,6 +244,11 @@ p {
 
 // <<---------------Airports---------------->>
 
+
+// <<---------------Cabs---------------->>
+ol {
+  padding-left: 40px;
+}
 
 
 

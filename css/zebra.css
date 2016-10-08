@@ -9,14 +9,16 @@ body {
   margin: 0;
   padding: 0; }
 
+h1, h3, h4, h5, h6 {
+  text-align: center; }
+
 h1 {
   color: #f6f6f6;
   font-size: 18.0em;
   font-weight: 900;
   letter-spacing: 2px;
   padding-top: 30px;
-  opacity: 0;
-  text-align: center; }
+  opacity: 0; }
 
 h2 {
   color: #fff;
@@ -29,8 +31,7 @@ h3 {
   color: #4a4a4a;
   font-size: 4.2em;
   font-weight: 300;
-  letter-spacing: 2.5px;
-  text-align: center; }
+  letter-spacing: 2.5px; }
 
 h3:after {
   background-color: #1cbeec;
@@ -46,12 +47,27 @@ h4 {
   color: #4a4a4a;
   font-size: 2.6em;
   font-weight: 300;
-  margin: 100px 0 50px 0;
-  text-align: center; }
+  margin: 100px 0 50px 0; }
 
-p {
+h5 {
+  color: #4a4a4a;
+  font-size: 2.4em;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-align: left; }
+
+h6 {
+  color: #4a4a4a;
+  font-size: 2.0em;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-align: left; }
+
+p, ol {
+  font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 1px;
+  padding: 0;
   text-align: left; }
 
 .center-text {
@@ -99,9 +115,11 @@ p {
 
 .section-border {
   border-bottom: 2px solid #f6f6f6;
-  border-top: 2px solid #f6f6f6;
   position: relative;
   padding-bottom: 100px; }
+
+.section-text {
+  margin-top: 50px; }
 
 .breadcrumb {
   background-color: #fff; }
@@ -157,5 +175,8 @@ p {
     letter-spacing: 1px;
     padding: 1px;
     width: 130px; }
+
+ol {
+  padding-left: 40px; }
 
 /*# sourceMappingURL=zebra.css.map */
