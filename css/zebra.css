@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,900";
 body {
-  background-color: #FFF;
+  background-color: #fff;
   box-sizing: border-box;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 10px;
   letter-spacing: 1px;
   line-height: 26px;
@@ -10,30 +10,40 @@ body {
   padding: 0; }
 
 h1 {
+  color: #f6f6f6;
+  font-size: 18.0em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  opacity: 0;
+  text-align: center; }
+
+h2 {
+  color: #fff;
   font-size: 7.2em;
   font-weight: 900;
   line-height: 1;
   text-align: left; }
 
-h2 {
-  color: #4A4A4A;
+h3 {
+  color: #4a4a4a;
   font-size: 4.2em;
   font-weight: 300;
   letter-spacing: 2.5px;
   text-align: center; }
 
-h2:after {
+h3:after {
+  background-color: #1cbeec;
+  content: " ";
   display: block;
   height: 3px;
-  background-color: #1CBEEC;
-  content: " ";
-  width: 30px;
   margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 30px; }
 
-h3 {
-  color: #4A4A4A;
+h4 {
+  color: #4a4a4a;
   font-size: 2.6em;
   font-weight: 300;
   margin: 100px 0 50px 0;
@@ -43,6 +53,9 @@ p {
   font-weight: 300;
   letter-spacing: 1px;
   text-align: left; }
+
+.center-text {
+  text-align: center; }
 
 .hero {
   background: url("../images/bg-nyc.png") no-repeat center bottom;
@@ -60,9 +73,9 @@ p {
     position: relative;
     top: 50%; }
     .hero .intro h1 {
-      color: #FFF; }
+      color: #fff; }
     .hero .intro p {
-      color: #FFF;
+      color: #fff;
       font-size: 1.8em; }
 
 .logo {
@@ -70,25 +83,41 @@ p {
   margin-top: 5%;
   width: 12em; }
 
-.bottom-border {
-  border-bottom: 2px solid #F6F6F6;
-  position: relative; }
+.section-header {
+  margin-top: 150px; }
+  .section-header img {
+    display: block;
+    height: 40px;
+    margin: 0 auto; }
+
+.underlay {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.section-border {
+  border-bottom: 2px solid #f6f6f6;
+  border-top: 2px solid #f6f6f6;
+  position: relative;
+  padding-bottom: 100px; }
 
 .breadcrumb {
   background-color: #fff; }
   .breadcrumb li {
-    color: #4A4A4A;
+    color: #4a4a4a;
     font-size: 1.4em;
     padding-bottom: 5px; }
   .breadcrumb li + li:before {
-    color: #4A4A4A;
+    color: #4a4a4a;
     content: " ";
     background: url("../images/icon-caret-right.svg") no-repeat center center;
     background-size: .5em;
     padding: 0 20px; }
   .breadcrumb .active span {
-    border-bottom: 2px solid #1CBEEC;
-    color: #4A4A4A;
+    border-bottom: 2px solid #1cbeec;
+    color: #4a4a4a;
     padding-bottom: 10px; }
 
 .container-flex {
@@ -121,7 +150,7 @@ p {
       height: 130px;
       width: auto; }
   .flex-item button {
-    background-color: #1CBEEC;
+    background-color: #1cbeec;
     border-radius: 30px;
     border: none;
     cursor: pointer;

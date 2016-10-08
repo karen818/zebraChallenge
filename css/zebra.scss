@@ -2,16 +2,16 @@
 
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,900';
 
-$header-color: #FFF;
-$body-color: #4A4A4A;
-$highlight-color: #1CBEEC;
-$line-color: #F6F6F6;
+$header-color: #fff;
+$body-color: #4a4a4a;
+$highlight-color: #1cbeec;
+$light-grey: #f6f6f6;
 
 // <<---------------Basic Setup---------------->>
 
 //font size set to 10px for easier em conversion
 body {
-  background-color: #FFF;
+  background-color: #fff;
   box-sizing: border-box;
   color: $body-color;
   font-size: 10px;
@@ -21,9 +21,20 @@ body {
   padding: 0;
 }
 
+h1 {
+  color: $light-grey;
+  font-size: 18.0em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  opacity: 0;
+  text-align: center;
+}
+
 //font-size: 72px
 //line-height: 70px
-h1 {
+h2 {
+  color: $header-color;
   font-size: 7.2em;
   font-weight: 900;
   line-height: 1;
@@ -31,7 +42,7 @@ h1 {
 }
 
 //font-size: 42px
-h2 {
+h3 {
   color: $body-color;
   font-size: 4.2em;
   font-weight: 300;
@@ -39,19 +50,19 @@ h2 {
   text-align: center;
 }
 
-h2:after {
-    display: block;
-    height: 3px;
+h3:after {
     background-color: $highlight-color;
     content: " ";
-    width: 30px;
+    display: block;
+    height: 3px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
+    width: 30px;
 }
 
 //font-size: 26px
-h3 {
+h4 {
   color: $body-color;
   font-size: 2.6em;
   font-weight: 300;
@@ -63,6 +74,10 @@ p {
   font-weight: 300;
   letter-spacing: 1px;
   text-align: left;
+}
+
+.center-text {
+  text-align: center;
 }
 
 // <<---------------Header---------------->>
@@ -102,11 +117,29 @@ p {
 
 // <<---------------SECTIONS---------------->>
 
+.section-header {
+  margin-top: 150px;
+  img {
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
+.underlay {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 // <<---------------Nav------------------->>
 
-.bottom-border {
-  border-bottom: 2px solid $line-color;
+.section-border {
+  border-bottom: 2px solid $light-grey;
+  border-top: 2px solid $light-grey;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .breadcrumb {
@@ -181,6 +214,10 @@ p {
   }
 
 }
+
+// <<---------------Airports---------------->>
+
+
 
 
 // <<---------------Footer---------------->>
