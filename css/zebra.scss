@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   color: $body-color;
   font-size: 10px;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
   line-height: 26px;
   margin: 0;
   padding: 0;
@@ -54,6 +54,9 @@ h2:after {
 h3 {
   color: $body-color;
   font-size: 2.6em;
+  font-weight: 300;
+  margin: 100px 0 50px 0;
+  text-align: center;
 }
 
 p {
@@ -129,5 +132,55 @@ p {
     padding-bottom: 10px;
   }
 }
+
+// <<---------------Categories---------------->>
+
+.container-flex {
+  align-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-item {
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #b7b7b7;
+  -webkit-box-shadow: 0 0 5px #b7b7b7;
+  box-shadow: 0 0 5px #b7b7b7;
+  padding: 5px;
+  width: 175px;
+  height: 150px;
+  margin: 10px;
+
+  color: white;
+  font-weight: 300;
+  font-size: 1.4em;
+  text-align: center;
+
+  a {
+    color: #fff;
+    img {
+      padding: 40px 0 35px 0;
+      height: 130px;
+      width: auto;
+    }
+  }
+
+  button {
+    background-color: $highlight-color;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 1px;
+    width: 130px;
+  }
+
+}
+
 
 // <<---------------Footer---------------->>
