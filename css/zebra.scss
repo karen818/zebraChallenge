@@ -8,14 +8,14 @@ $highlight-color: #1CBEEC;
 
 // <<---------------Basic Setup---------------->>
 
-//using 10px and 26px as the base sizes for easier em conversion
-html {
-  font-size: 10px;
-  line-height: 26px;
-}
+//font size set to 10px for easier em conversion
 body {
   background-color: #FFF;
+  box-sizing: border-box;
   color: $body-color;
+  font-size: 10px;
+  letter-spacing: .5px;
+  line-height: 26px;
   margin: 0;
   padding: 0;
 }
@@ -23,15 +23,16 @@ body {
 //font-size: 72px
 //line-height: 70px
 h1 {
-  color: $header-color;
   font-size: 7.2em;
-  line-height: 7em;
+  font-weight: 900;
+  line-height: 1;
+  text-align: left;
 }
 
 //font-size: 42px
 h2 {
   color: $body-color;
-  font-size: 42px;
+  font-size: 4.2em;
   font-weight: 300;
   letter-spacing: 2.5px;
   text-align: center;
@@ -54,15 +55,70 @@ h3 {
   font-size: 2.6em;
 }
 
+p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 // <<---------------Header---------------->>
 
-header {
-  p {
-    color: $header-color;
-    font-size: 1.8em;
+.hero {
+  background: url('../images/bg-nyc.png') no-repeat center bottom;
+  background-size: cover;
+  height: 100vh;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+  }
+  .intro {
+    margin-top: 25%;
+    position: relative;
+    top: 50%;
+    h1 {
+      color: $header-color;
+    }
+    p {
+      color: $header-color;
+      font-size: 1.8em;
+    }
   }
 }
 
-// <<---------------Sections---------------->>
+.logo {
+  height: auto;
+  margin-top: 5%;
+  width: 12em;
+}
+
+
+// <<---------------SECTIONS---------------->>
+
+// <<---------------Nav------------------->>
+
+.breadcrumb {
+  background-color: #fff;
+
+  li {
+    color: $body-color;
+    font-size: 1.4em;
+    padding-bottom: 5px;
+  }
+
+  li + li:before {
+    color: $body-color;
+    content: url('../images/icon-caret-right.png');
+    padding: 0 5px;
+  }
+
+  li + li:after {
+    border-bottom: 2px solid $highlight-color;
+    color: $body-color;
+  }
+}
 
 // <<---------------Footer---------------->>

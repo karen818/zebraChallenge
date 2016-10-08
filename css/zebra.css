@@ -1,22 +1,23 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,900";
-html {
-  font-size: 10px;
-  line-height: 26px; }
-
 body {
   background-color: #FFF;
+  box-sizing: border-box;
   color: #4A4A4A;
+  font-size: 10px;
+  letter-spacing: .5px;
+  line-height: 26px;
   margin: 0;
   padding: 0; }
 
 h1 {
-  color: #FFF;
   font-size: 7.2em;
-  line-height: 7em; }
+  font-weight: 900;
+  line-height: 1;
+  text-align: left; }
 
 h2 {
   color: #4A4A4A;
-  font-size: 42px;
+  font-size: 4.2em;
   font-weight: 300;
   letter-spacing: 2.5px;
   text-align: center; }
@@ -35,8 +36,49 @@ h3 {
   color: #4A4A4A;
   font-size: 2.6em; }
 
-header p {
-  color: #FFF;
-  font-size: 1.8em; }
+p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: left; }
+
+.hero {
+  background: url("../images/bg-nyc.png") no-repeat center bottom;
+  background-size: cover;
+  height: 100vh; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .hero .intro {
+    margin-top: 25%;
+    position: relative;
+    top: 50%; }
+    .hero .intro h1 {
+      color: #FFF; }
+    .hero .intro p {
+      color: #FFF;
+      font-size: 1.8em; }
+
+.logo {
+  height: auto;
+  margin-top: 5%;
+  width: 12em; }
+
+.breadcrumb {
+  background-color: #fff; }
+  .breadcrumb li {
+    color: #4A4A4A;
+    font-size: 1.4em;
+    padding-bottom: 5px; }
+  .breadcrumb li + li:before {
+    color: #4A4A4A;
+    content: url("../images/icon-caret-right.png");
+    padding: 0 5px; }
+  .breadcrumb li + li:after {
+    border-bottom: 2px solid #1CBEEC;
+    color: #4A4A4A; }
 
 /*# sourceMappingURL=zebra.css.map */
