@@ -5,6 +5,7 @@
 $header-color: #FFF;
 $body-color: #4A4A4A;
 $highlight-color: #1CBEEC;
+$line-color: #F6F6F6;
 
 // <<---------------Basic Setup---------------->>
 
@@ -100,6 +101,11 @@ p {
 
 // <<---------------Nav------------------->>
 
+.bottom-border {
+  border-bottom: 2px solid $line-color;
+  position: relative;
+}
+
 .breadcrumb {
   background-color: #fff;
 
@@ -111,13 +117,16 @@ p {
 
   li + li:before {
     color: $body-color;
-    content: url('../images/icon-caret-right.png');
-    padding: 0 5px;
+    content: " ";
+    background: url('../images/icon-caret-right.svg') no-repeat center center;
+    background-size: .5em;
+    padding: 0 20px;
   }
 
-  li + li:after {
+  .active span {
     border-bottom: 2px solid $highlight-color;
     color: $body-color;
+    padding-bottom: 10px;
   }
 }
 

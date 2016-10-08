@@ -67,6 +67,10 @@ p {
   margin-top: 5%;
   width: 12em; }
 
+.bottom-border {
+  border-bottom: 2px solid #F6F6F6;
+  position: relative; }
+
 .breadcrumb {
   background-color: #fff; }
   .breadcrumb li {
@@ -75,10 +79,13 @@ p {
     padding-bottom: 5px; }
   .breadcrumb li + li:before {
     color: #4A4A4A;
-    content: url("../images/icon-caret-right.png");
-    padding: 0 5px; }
-  .breadcrumb li + li:after {
+    content: " ";
+    background: url("../images/icon-caret-right.svg") no-repeat center center;
+    background-size: .5em;
+    padding: 0 20px; }
+  .breadcrumb .active span {
     border-bottom: 2px solid #1CBEEC;
-    color: #4A4A4A; }
+    color: #4A4A4A;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=zebra.css.map */
