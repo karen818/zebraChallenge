@@ -2,16 +2,18 @@
 
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,900';
 
-$header-color: #fff;
+$background-color: #fafafa;
 $body-color: #4a4a4a;
+$header-color: #fff;
 $highlight-color: #1cbeec;
 $light-grey: #f6f6f6;
+$lighter-grey: #a4a4a4;
 
 // <<---------------Basic Setup---------------->>
 
 //font size set to 10px for easier em conversion
 body {
-  background-color: #fff;
+  background-color: $background-color;
   box-sizing: border-box;
   color: $body-color;
   font-size: 10px;
@@ -30,9 +32,6 @@ h1 {
   font-size: 18.0em;
   font-weight: 900;
   letter-spacing: 2px;
-  padding-top: 30px;
-  opacity: 0;
-
 }
 
 //font-size: 72px
@@ -69,6 +68,7 @@ h4 {
   color: $body-color;
   font-size: 2.6em;
   font-weight: 300;
+  letter-spacing: 2.5px;
   margin: 100px 0 50px 0;
 }
 
@@ -78,6 +78,7 @@ h5 {
   font-size: 2.4em;
   font-weight: 400;
   letter-spacing: 2.5px;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -87,6 +88,7 @@ h6 {
   font-size: 2.0em;
   font-weight: 400;
   letter-spacing: 2.5px;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -99,10 +101,22 @@ p, ol {
   text-align: left;
 }
 
+
+.bold-font {
+  font-weight: 500;
+}
+
 .center-text {
   text-align: center;
 }
 
+.highlight-color {
+  color: $highlight-color;
+}
+
+.lighter-grey {
+  color: $lighter-grey;
+}
 // <<---------------Header---------------->>
 
 .hero {
@@ -127,6 +141,7 @@ p, ol {
     p {
       color: $header-color;
       font-size: 1.8em;
+      letter-spacing: 2px;
     }
   }
 }
@@ -170,11 +185,11 @@ p, ol {
 
 
 .breadcrumb {
-  background-color: #fff;
+  background-color: $background-color;
 
   li {
     color: $body-color;
-    font-size: 1.4em;
+    font-size: 0.9em;
     padding-bottom: 5px;
   }
 
@@ -244,12 +259,59 @@ p, ol {
 
 // <<---------------Airports---------------->>
 
+div.item.active {
+  right:0;
+}
+.carousel {
+  float: right;
+  figure {
+    padding: 23px 0 30px 50px;
+    figcaption {
+      background-color: $header-color;
+      font-size: 1.4em;
+      font-weight: 300;
+      line-height: 1.6em;
+      padding: 25px;
+      width: 50%;
+      -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+      -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+      box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+    }
+  }
+  img {
+    width: 50%;
+  }
+}
 
 // <<---------------Cabs---------------->>
 ol {
   padding-left: 40px;
 }
 
+// <<---------------Subways---------------->>
 
+figure {
+  float: right;
+  padding: 23px 0 30px 50px;
 
+  figcaption {
+    background-color: $header-color;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.6em;
+    padding: 25px;
+    width: 90%;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
+  }
+  img {
+    width: 90%;
+    height: auto;
+  }
+}
 // <<---------------Footer---------------->>
+
+footer {
+  margin-top: 10em;
+}

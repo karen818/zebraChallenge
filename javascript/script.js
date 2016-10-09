@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $(window).scroll(function(){
-    $('h1').animate({'opacity':'.7'}, 1);
-  });
-});
+// var divs = $('h1');
+// $(window).scroll(function(){
+//    var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
+//    divs.css('opacity', 1 - percent);
+// });
