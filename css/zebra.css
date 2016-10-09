@@ -26,7 +26,8 @@ h1 {
   color: #f6f6f6;
   font-size: 18.0em;
   font-weight: 900;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  padding-top: 30px; }
 
 h2 {
   color: #fff;
