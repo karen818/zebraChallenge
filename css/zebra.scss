@@ -23,6 +23,17 @@ body {
   padding: 0;
 }
 
+figcaption {
+  background-color: $header-color;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+}
+
 h1, h3, h4, h5, h6 {
   text-align: center;
 }
@@ -259,28 +270,24 @@ p, ol {
 
 // <<---------------Airports---------------->>
 
-div.item.active {
-  right:0;
-}
 .carousel {
   float: right;
-  figure {
-    padding: 23px 0 30px 50px;
-    figcaption {
-      background-color: $header-color;
-      font-size: 1.4em;
-      font-weight: 300;
-      line-height: 1.6em;
-      padding: 25px;
-      width: 50%;
-      -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-      -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-      box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-    }
-  }
-  img {
-    width: 50%;
-  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  margin: 50% -2%;
+  padding: 20px;
+}
+
+.fa {
+  color: $body-color;
+  text-shadow: none;
+}
+
+#carousel.carousel.slide {
+  width: 50%;
 }
 
 // <<---------------Cabs---------------->>
@@ -295,15 +302,7 @@ figure {
   padding: 23px 0 30px 50px;
 
   figcaption {
-    background-color: $header-color;
-    font-size: 1.4em;
-    font-weight: 300;
-    line-height: 1.6em;
-    padding: 25px;
     width: 90%;
-    -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
-    -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
-    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.11);
   }
   img {
     width: 90%;
