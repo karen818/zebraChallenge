@@ -23,17 +23,6 @@ body {
   padding: 0;
 }
 
-figcaption {
-  background-color: $header-color;
-  font-size: 1.4em;
-  font-weight: 300;
-  line-height: 1.6em;
-  padding: 25px;
-  -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
-}
-
 h1, h3, h4, h5, h6 {
   text-align: center;
 }
@@ -167,6 +156,16 @@ p, ol {
 
 // <<---------------SECTIONS---------------->>
 
+figcaption {
+  background-color: $header-color;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+  padding: 25px;
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.05);
+}
 //for fade in effect of section headers
 .hide-me{
   opacity: 0;
@@ -275,7 +274,6 @@ p, ol {
     padding: 1px;
     width: 130px;
   }
-
 }
 
 // <<---------------Airports---------------->>
