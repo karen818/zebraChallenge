@@ -1,5 +1,6 @@
-// var divs = $('h1');
-// $(window).scroll(function(){
-//    var percent = $(document).scrollTop() / ($(document).height() - $(window).height());
-//    divs.css('opacity', 1 - percent);
-// });
+$(document).ready(function(){
+  $('h1').viewportChecker({
+    classToAdd: 'animated fadeIn',
+    offset: 100
+  });
+});

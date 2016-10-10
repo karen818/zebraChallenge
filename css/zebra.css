@@ -121,6 +121,12 @@ p, ol {
   margin-top: 5%;
   width: 12em; }
 
+.hide-me {
+  opacity: 0; }
+
+.show-me {
+  opacity: 1; }
+
 .section-header {
   margin-top: 150px; }
   .section-header img {
@@ -168,6 +174,7 @@ p, ol {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
 
 .flex-item {

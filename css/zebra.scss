@@ -167,6 +167,14 @@ p, ol {
 
 // <<---------------SECTIONS---------------->>
 
+//for fade in effect of section headers
+.hide-me{
+  opacity: 0;
+}
+.show-me{
+  opacity: 1;
+}
+
 .section-header {
   margin-top: 150px;
   img {
@@ -230,6 +238,7 @@ p, ol {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 

@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <title>Karen Kelly's Zebra Coding Challenge</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="css/animate.css" media="screen" title="no title">
   <link rel="stylesheet" href="css/zebra.css" media="screen">
   <script src="https://use.fontawesome.com/3eca395bad.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="javascript/viewport-checker.min.js"></script>
 </head>
 <body>
 <header class="hero">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
         <img src="images/logo-zebra.png" alt="'The Zebra' logo" class="logo" />
         <div class="intro">
           <h2>The New York City Guide to Getting Around.</h2>
@@ -27,7 +30,7 @@
 <nav>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
 
         <!-- view only...for live nav, I would use css to change the active item's
         bottom border -->
@@ -39,14 +42,13 @@
       </div>
     </div>
   </div>
-</div>
 </nav>
 
 <section class="categories section-border">
   <div class="container-fluid">
     <div class="row">
       <h4>NYC Transportation Categories</h4>
-      <div class="col-md-6 col-md-offset-3 container-flex">
+      <div class="col-md-8 col-md-offset-2 container-flex">
         <div class="flex-item">
           <a href="#airports">
             <img src="images/icon-airplane.svg" alt="Airplane graphic" />
@@ -91,7 +93,7 @@
         <img src="images/icon-airplane.svg" alt="Airplane graphic"/>
         <h3>Airports</h3>
       </div>
-      <div class="col-md-6 col-md-offset-3 section-text">
+      <div class="col-md-8 col-md-offset-2 section-text">
         <div id="carousel" class="carousel slide">
           <figure>
             <div class="carousel-inner" role="listbox">
@@ -138,18 +140,18 @@
         <img src="images/icon-taxi.svg" alt="Taxi graphic"/>
         <h3>Cabs</h3>
       </div>
-      <div class="col-md-6 col-md-offset-3 section-text">
+      <div class="col-md-8 col-md-offset-2 section-text">
         <p>
           New York City cabs are iconic. You often see in tv shows or movies people having a hard time catching a cab in NYC. Fortunately, it isn’t that hard in real life you just have to know what to look for.<br/><br/>
 
-          There are easy to read signs that can tell you the status of a cab. Cabs can be three things On-Duty, Occupied, and Off-Duty. You can tell the difference between these cabs by looking at the light on the top of the cab.<br/>
+          There are easy to read signs that can tell you the status of a cab. Cabs can be three things On-Duty, Occupied, and Off-Duty. You can tell the difference between these cabs by looking at the light on the top of the cab.
+        </p>
 
           <ol>
             <li>An On-Duty cab will have just the center of the light on highlighting the cabs number.</li>
             <li>An Occupied cab will not have any lights on the top on. This means that someone is already in the cab and it can’t stop for you.</li>
             <li>An Off-Duty cab will have all of its lights on the top on. Not only will the light highlighting the cab number be on but the lights on the sides of the topper will be on as well.</li>
           </ol>
-        </p>
 
           <h5>How to Use Cabs in New York</h5>
 
@@ -180,7 +182,7 @@
         <img src="images/icon-subways.svg" alt="Subway graphic"/>
         <h3>Subways</h3>
       </div>
-      <div class="col-md-6 col-md-offset-3 section-text">
+      <div class="col-md-8 col-md-offset-2 section-text">
         <figure>
           <img src="images/nyc-transit-map.png" alt="NYC transit map graphic"/>
           <figcaption>
@@ -257,7 +259,7 @@
 <footer>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-8 col-md-offset-2">
         <p class="center-text">
           The rates or savings advertised are not necessarily available from all providers or advertisers listed on our site. Your actual rates or savings will vary based on factors like your driving history, coverage limits, deductibles, type of vehicle, location, &amp; more. The Zebra is a licensed insurance broker, but we do not underwrite insurance policies.<br/><br/>
           <span class="bold-font">© 2016 Insurance Zebra. All Rights Reserved.</span><br/><br/>
@@ -268,12 +270,8 @@
   </div>
 </footer>
 
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-<script src="javascript/bootstrap.min.js">
 
-</script>
-<script src="javascript/script.js">
-
-</script>
+<script src="javascript/bootstrap.min.js"></script>
+<script src="javascript/script.js"></script>
 </body>
 </html>
